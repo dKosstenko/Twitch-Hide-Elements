@@ -123,7 +123,7 @@ html[hide_element_search_rec="true"] .verticals__header-wrapper + div + div + di
 
 /* ----------------------------------------- CUSTOM --------------------------------------- */
 
-html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar),
+html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar):not([alt="User Avatar"]),
 
 
 /* --------------------------------------- CSS EDIT --------------------------------------- */
@@ -226,6 +226,6 @@ html[hide_element_gift_alerts="true"] div.announcement-line {
 
 /* Custom */
 
-html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar) {
+html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar):not([alt="User Avatar"]) {
   display: none;
 }
