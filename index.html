@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+   <head>
+      <meta content="text/html; charset=utf-8">
+      <link rel="stylesheet" href="marx.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Twitch: Hide Elements</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="top">
+            <div class="left">
+               <div id="logo"></div>
+               <p>Twitch: Hide Elements</p>
+            </div>
+
+            <div class="right">
+               <label class="switch">
+                  <input type="checkbox" id="ext_off">
+                  <span class="slider"></span>
+               </label>
+            </div>
+         </div>
+
+         <div class="mid">
+            <div class="elements">
+               <ul>
+                  <li class="sections"><input type="checkbox" id="hide_element_left_sidebar" class="check"><label
+                        for="hide_element_left_sidebar" class="element">Left Section</label></li>
+                  <li><input type="checkbox" id="hide_element_following" class="check"><label
+                        for="hide_element_following" class="element">Followed Channels</label></li>
+                  <li><input type="checkbox" id="hide_element_rec_channels" class="check"><label
+                        for="hide_element_rec_channels" class="element">Recommended Channels</label></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_short_rec" class="check"><label
+                        for="hide_element_short_rec" class="element">Short Recommendations</label><span
+                        class="tooltiptext" id="tooltiptext_right">Reduce amount recommended channels from 6 to 3</span>
+                  </li>
+                  <li><input type="checkbox" id="hide_element_viewers_also_watch" class="check"><label
+                        for="hide_element_viewers_also_watch" class="element">Viewers Also Watch</label></li>
+                  <li><input type="checkbox" id="hide_element_live_status" class="check"><label
+                        for="hide_element_live_status" class="element">Live Status & Viewers</label></li>
+                  <li class="sections bot_sections">Other</li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_carousel" class="check"><label
+                        for="hide_element_carousel" class="element">Carousel on Main Page</label><span
+                        class="tooltiptext" id="tooltiptext_right">Hide carousel of video players from Twitch main
+                        page</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_clips_page" class="check"><label
+                        for="hide_element_clips_page" class="element">Elements on Clips Page</label><span
+                        class="tooltiptext" id="tooltiptext_right">Hide elements by link (clips.twitch.tv/*)</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_popup_notification" class="check"><label
+                        for="hide_element_popup_notification" class="element">Stream Popup Notification</label><span
+                        class="tooltiptext" id="tooltiptext_right">Hide notification with information about someone
+                        start stream</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_search_rec" class="check"><label
+                        for="hide_element_search_rec" class="element">Recommendations</label><span class="tooltiptext"
+                        id="tooltiptext_right">Hide recommendations from some pages</span></li>
+               </ul>
+            </div>
+
+            <div class="elements">
+               <ul>
+                  <li class="sections"><input type="checkbox" id="hide_element_top_bar" class="check"><label
+                        for="hide_element_top_bar" class="element">Top Section</label></li>
+                  <li><input type="checkbox" id="hide_element_logo_home" class="check"><label
+                        for="hide_element_logo_home" class="element">Logo</label></li>
+                  <li><input type="checkbox" id="hide_element_following_tab" class="check"><label
+                        for="hide_element_following_tab" class="element">Following Tab</label></li>
+                  <li><input type="checkbox" id="hide_element_browse_tab" class="check"><label
+                        for="hide_element_browse_tab" class="element">Browse Tab</label></li>
+                  <li><input type="checkbox" id="hide_element_top_ellipsis" class="check"><label
+                        for="hide_element_top_ellipsis" class="element">Three Dots</label></li>
+                  <li><input type="checkbox" id="hide_element_top_input" class="check"><label
+                        for="hide_element_top_input" class="element">Search Box</label></li>
+                  <li><input type="checkbox" id="hide_element_loot" class="check"><label for="hide_element_loot"
+                        class="element">Prime Loot</label></lip>
+                  <li><input type="checkbox" id="hide_element_notifs" class="check"><label for="hide_element_notifs"
+                        class="element">Notifications</label></li>
+                  <li><input type="checkbox" id="hide_element_whispers" class="check"><label for="hide_element_whispers"
+                        class="element">Whispers</label></li>
+                  <li><input type="checkbox" id="hide_element_get_bits" class="check"><label for="hide_element_get_bits"
+                        class="element">Get Bits</label></li>
+                  <li><input type="checkbox" id="hide_element_avatar" class="check"><label for="hide_element_avatar"
+                        class="element">Avatar</label></li>
+               </ul>
+            </div>
+
+            <div class="elements">
+               <ul>
+                  <li class="sections"><input type="checkbox" id="hide_element_mid" class="check"><label
+                        for="hide_element_mid" class="element">Mid Section</label></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_extensions" class="check"><label
+                        for="hide_element_extensions" class="element">Extensions Overlay</label><span
+                        class="tooltiptext" id="tooltiptext_left">Hide all extensions overlays above the video
+                        player</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_tags" class="check"><label
+                        for="hide_element_tags" class="element">All Possible Tags</label><span class="tooltiptext"
+                        id="tooltiptext_left">Hide tags from all twitch pages</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_live_indicator" class="check"><label
+                        for="hide_element_live_indicator" class="element">Avatar Live Banner</label><span
+                        class="tooltiptext" id="tooltiptext_left">Hide a little [Live] indicator on streamer's
+                        avatar</span></li>
+                  <li><input type="checkbox" id="hide_element_unfollow" class="check"><label for="hide_element_unfollow"
+                        class="element">Unfollow Button</label></li>
+                  <li><input type="checkbox" id="hide_element_sub_button" class="check"><label
+                        for="hide_element_sub_button" class="element">Subscribe Button</label></li>
+                  <li><input type="checkbox" id="hide_element_share_report" class="check"><label
+                        for="hide_element_share_report" class="element">Share & Report</label></li>
+                  <li><input type="checkbox" id="hide_element_about_section" class="check"><label
+                        for="hide_element_about_section" class="element">About Streamer</label></li>
+                  <li><input type="checkbox" id="hide_element_channel_panels" class="check"><label
+                        for="hide_element_channel_panels" class="element">Description Panel</label></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_offline_hud" class="check"><label
+                        for="hide_element_offline_hud" class="element">Offline Overlay</label><span class="tooltiptext"
+                        id="tooltiptext_left">Hide offline overlay above video player banner</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_bg" class="check"><label
+                        for="hide_element_bg" class="element">Player Background</label><span class="tooltiptext"
+                        id="tooltiptext_top">When you collapse left/right sidebar, you can see a contrasting black
+                        background under the video player, this option changes background color to a closer Twitch color
+                        palette & theme</span></li>
+               </ul>
+            </div>
+
+            <div class="elements">
+               <ul>
+                  <li class="sections tooltip"><input type="checkbox" id="hide_element_full_chat" class="check"><label
+                        for="hide_element_full_chat" class="element">Right Section</label><span class="tooltiptext"
+                        id="tooltiptext_left">This feature specially don't hide a full block, only inside
+                        elements</span></li>
+                  <li><input type="checkbox" id="hide_element_chat_header" class="check"><label
+                        for="hide_element_chat_header" class="element">Chat Header</label></li>
+                  <li><input type="checkbox" id="hide_element_channel_leaderboard_header" class="check"><label
+                        for="hide_element_channel_leaderboard_header" class="element">Leaderboard</label></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_event_hud" class="check"><label
+                        for="hide_element_event_hud" class="element">Events Overlay</label><span class="tooltiptext"
+                        id="tooltiptext_left">Hide pop-up events like predict, vote, hype train, etc</span></li>
+                  <li><input type="checkbox" id="hide_element_channel_points" class="check"><label
+                        for="hide_element_channel_points" class="element">Channel Points</label></li>
+                  <li><input type="checkbox" id="hide_element_chat_footer" class="check"><label
+                        for="hide_element_chat_footer" class="element">Chat Footer</label></li>
+                  <li class="sections bot_sections">Chat Details</li>
+                  <li><input type="checkbox" id="hide_element_all_icons" class="check"><label
+                        for="hide_element_all_icons" class="element">All Users Badges</label></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_main_icons" class="check"><label
+                        for="hide_element_main_icons" class="element">Popular Badges</label><span class="tooltiptext"
+                        id="tooltiptext_left">Hide only popular badges like Prime Gaming, GLHF Pledge, etc</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_gift_alerts" class="check"><label
+                        for="hide_element_gift_alerts" class="element">Alert Messages</label><span class="tooltiptext"
+                        id="tooltiptext_left">Hide highlighted chat messages about subs, raids, etc</span></li>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_neutral_nicknames" class="check"><label
+                        for="hide_element_neutral_nicknames" class="element">Usernames Color</label><span
+                        class="tooltiptext" id="tooltiptext_left">Changes color of all usernames to neutral
+                        white/black</span></li>
+               </ul>
+            </div>
+
+            <div class="elements">
+               <ul>
+                  <li class="tooltip"><input type="checkbox" id="hide_element_image_avatar" class="check"><label
+                        for="hide_element_image_avatar" class="element">Remove Avatars</label><span class="tooltiptext"
+                        id="tooltiptext_left">Removes Avatars From Sidebar</span></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <script src="ext_off.js"></script>
+   </body>
+</html>

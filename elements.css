@@ -1,0 +1,231 @@
+/* --------------------------------------- LEFT SIDEBAR --------------------------------------- */
+/* Hide Full Left Sidebar */
+html[hide_element_left_sidebar="true"] .side-nav,
+
+/* Recommended, Viewer Also Watch, Online Friends and Friends Search Sections */
+html[hide_element_following="true"] .side-nav__title,
+html[hide_element_following="true"] .side-nav__title + div,
+html[hide_element_following="true"] .side-nav--collapsed #side-nav > div > div > div:first-of-type,
+
+html[hide_element_rec_channels="true"] .side-nav__title ~ div:nth-of-type(3),
+html[hide_element_rec_channels="true"] .side-nav--collapsed #side-nav > div > div > div:nth-of-type(2),
+
+html[hide_element_short_rec="true"] .side-nav__title ~ div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(4),
+html[hide_element_short_rec="true"] .side-nav__title ~ div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(5),
+html[hide_element_short_rec="true"] .side-nav__title ~ div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(6),
+
+/* Short Collapsed */
+html[hide_element_short_rec="true"] .side-nav--collapsed #side-nav > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(4),
+html[hide_element_short_rec="true"] .side-nav--collapsed #side-nav > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(5),
+html[hide_element_short_rec="true"] .side-nav--collapsed #side-nav > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(6),
+
+html[hide_element_viewers_also_watch="true"] .side-nav__title ~ div:nth-of-type(4),
+html[hide_element_viewers_also_watch="true"] .side-nav--collapsed #side-nav > div > div > div:nth-of-type(3),
+
+html[hide_element_live_status="true"] div[data-a-target="side-nav-live-status"],
+
+/* --------------------------------------- TOP BAR --------------------------------------- */
+/* Hide Full Top Bar */
+html[hide_element_top_bar="true"] .top-nav,
+
+/* Left Top Bar: Follow Tab, Browse Tab, Ellipsis */
+html[hide_element_logo_home="true"] a[data-a-target="home-link"],
+html[hide_element_following_tab="true"] a[data-a-target="following-link"],
+html[hide_element_browse_tab="true"] a[data-a-target="browse-link"],
+html[hide_element_top_ellipsis="true"] button[data-a-target="ellipsis-button"],
+
+/* Search Input */
+html[hide_element_top_input="true"] .search-box,
+
+/* Right Top Bar: Prime Loot, Notifications, Whispers, Get Bits, Avatar */
+html[hide_element_loot="true"] .top-nav__prime,
+/*html[hide_element_notifs="true"] .onsite-notifications-toast-manager + div,
+html[hide_element_notifs="true"] .onsite-notifications__badge,*/
+html[hide_element_notifs="true"] .onsite-notifications > div:nth-of-type(2),
+html[hide_element_whispers="true"] .top-nav__prime ~ div:nth-of-type(4),
+html[hide_element_get_bits="true"] .top-nav__prime ~ div:nth-of-type(5),
+/*html[hide_element_avatar="true"] .top-nav__prime ~ div:nth-of-type(6),*/
+html[hide_element_avatar="true"] button[data-a-target="user-menu-toggle"],
+
+/* --------------------------------------- MID --------------------------------------- */
+/* Subscribe, Unfollow, Hide Share And Report Buttons */
+html[hide_element_extensions="true"] .extensions-video-overlay-size-container,
+html[hide_element_extensions="true"] .extensions-dock__layout,
+html[hide_element_offline_hud="true"] .follow-panel-overlay,
+html[hide_element_offline_hud="true"] .click-handler + div.resize-detector + div:not(.player-overlay-background),
+html[hide_element_share_report="true"] button[data-a-target="report-button-more-button"],
+html[hide_element_share_report="true"] button[data-a-target="share-button"],
+html[hide_element_sub_button="true"] button[data-a-target="subscribe-button"],
+html[hide_element_unfollow="true"] div[data-target="channel-header-right"] button[data-a-target="unfollow-button"],
+html[hide_element_live_indicator="true"] .live-indicator-container,
+
+/* --------------------------------------- RIGHT SIDEBAR --------------------------------------- */
+/* Hide Full Chat Bar */
+html[hide_element_full_chat="true"] .stream-chat,
+
+/* Chat Header with Arrow */
+html[hide_element_chat_header="true"] .stream-chat-header,
+html[hide_element_chat_header="true"] button[data-a-target="right-column__toggle-collapse-btn"],
+
+/* Chat Header in VOD */
+html[hide_element_chat_header="true"] .video-chat__header,
+
+/* Hide Leaderboard of Gifters */
+html[hide_element_channel_leaderboard_header="true"] .chat-room__content > div:first-of-type,
+
+/* Top Chat Hud for Notification Action */
+html[hide_element_event_hud="true"] .chat-room__content > div:first-of-type + div,
+
+/* Hide Points and Footer */
+html[hide_element_channel_points="true"] .community-points-summary,
+html[hide_element_chat_footer="true"] .chat-input__buttons-container,
+
+/* --------------------------------------- CHAT DETAILS --------------------------------------- */
+/* Show Default badges */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/f1d8486f-eb2e-4553-b44f-4d614617afc1/1"], /* 1 Sub Gifter */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/73b5c3fb-24f9-4a82-a852-2f475b59411c/1"], /* 1 Cheer Gifter */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/1d4b03b9-51ea-42c9-8f29-698e3c85be3d/1"], /* GlitchCon 2020 */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/3158e758-3cb4-43c5-94b3-7639810451c5/1"], /* GLHF Pledge */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/e33d8b46-f63b-4e67-996d-4a7dcec0ad33/1"], /* Predict Win */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/4b76d5f2-91cc-4400-adf2-908a1e6cfd1e/1"], /* Predict Lose */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/bd444ec6-8f34-4bf9-91f4-af1e3428d80f/1"], /* Turbo */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/bbbe0db0-a598-423e-86d0-f9fb98ca1933/1"], /* Prime Gaming */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/a539dc18-ae19-49b0-98c4-8391a594332b/1"], /* Direct Relief - Charity 2018 */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/ca980da1-3639-48a6-95a3-a03b002eb0e5/1"], /* OWL All-Access Pass 2019 */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/aef2cd08-f29b-45a1-8c12-d44d7fd5e6f0/1"], /* No sound */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/199a0dba-58f3-494e-a7fc-1fa0a1001fb8/1"], /* No video */
+html[hide_element_main_icons="true"] img[src="https://static-cdn.jtvnw.net/badges/v1/bf370830-d79a-497b-81c6-a365b2b60dda/1"], /* Moments */
+
+/* Hide all user’s badges */
+html[hide_element_all_icons="true"] button[data-a-target="chat-badge"] > .chat-badge,
+
+/* Hide all user’s badges withoun mod's icon in VOD */
+html[hide_element_all_icons="true"] a[data-a-target="chat-badge"] > .chat-badge,
+
+/* Hide inchat highlighted messeges, like Gift Alerts, etc */
+html[hide_element_gift_alerts="true"] .user-notice-line--highlighted,
+html[hide_element_gift_alerts="true"] .announcement-line > div:first-of-type,
+
+/* --------------------------------------- OTHER --------------------------------------- */
+/* Hide Carousel on Front Page */
+html[hide_element_carousel="true"] .front-page-carousel,
+html[hide_element_clips_page="true"] .clips-top-nav,
+html[hide_element_clips_page="true"] .clips-edit-top-nav,
+html[hide_element_clips_page="true"] .clips-watch > .tw-animation > div:first-of-type,
+html[hide_element_clips_page="true"] .clips-watch > .tw-animation > div:first-of-type + div + div,
+html[hide_element_clips_page="true"] .clips-post-edit-share > div:first-of-type + div,
+html[hide_element_popup_notification="true"] .onsite-notifications-toast-manager,
+html[hide_element_search_rec="true"] .search-result-related-live-channels__row-container,
+html[hide_element_search_rec="true"] #following-page-main-content .find-me,
+html[hide_element_search_rec="true"] .verticals__header-wrapper + div + div,
+html[hide_element_search_rec="true"] .verticals__header-wrapper + div + div + div,
+
+
+/* ----------------------------------------- CUSTOM --------------------------------------- */
+
+html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar),
+
+
+/* --------------------------------------- CSS EDIT --------------------------------------- */
+html[hide_element_channel_panels="true"] .channel-panels-container {
+  height: 0 !important;
+  display: none !important;
+}
+
+html[hide_element_channel_panels="true"] .channel-root__player > div:nth-of-type(2) > div:nth-of-type(1) {
+  background-color: var(--color-background-body) !important;
+}
+
+html[hide_element_bg="true"] video {
+  background-color: var(--color-background-body) !important;
+}
+
+html[hide_element_carousel="true"] .front-page-carousel {
+  min-height: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+}
+
+html[hide_element_about_section="true"] .channel-info-content > div {
+  min-height: 1px !important;
+}
+
+html[hide_element_channel_panels="true"] .channel-info-content > div {
+  min-height: 1px !important;
+}
+
+html[hide_element_neutral_nicknames="true"] .chat-author__display-name {
+  color: var(--color-text-base)  !important;
+}
+
+html[hide_element_following_tab="true"] a[aria-label="Twitch Home"] + div > div > div:first-of-type {
+  padding: 0 !important;
+}
+
+html[hide_element_browse_tab="true"] a[aria-label="Twitch Home"] + div > div > div:first-of-type + div {
+  padding: 0 !important;
+}
+
+html[hide_element_channel_panels="true"] .channel-panels {
+  visibility: hidden !important;
+  min-height: 0 !important;
+}
+
+html[hide_element_about_section="true"] .about-section {
+  display: none !important;
+  height: 0 !important;
+}
+
+html[hide_element_tags="true"] .tw-tag {
+  visibility: hidden;
+}
+
+/* Mid */
+
+html[hide_element_mid="true"] .channel-info-content > div {
+  min-height: 1px !important;
+}
+
+html[hide_element_mid="true"] .about-section {
+  display: none !important;
+  height: 0 !important;
+}
+
+html[hide_element_mid="true"] .channel-panels-container {
+  height: 0 !important;
+  display: none !important;
+}
+
+html[hide_element_mid="true"] .channel-root__player > div:nth-of-type(2) > div:nth-of-type(1) {
+  background-color: var(--color-background-body) !important;
+}
+
+html[hide_element_mid="true"] .channel-info-content > div {
+  min-height: 1px !important;
+}
+
+html[hide_element_mid="true"] .channel-panels {
+  visibility: hidden !important;
+  min-height: 0 !important;
+}
+
+html[hide_element_clips_page="true"] .clips-post-edit-share > div:first-of-type {
+  margin-bottom: 0 !important;
+}
+
+html[hide_element_notifs="true"] .top-nav__prime ~ div:nth-of-type(3) {
+  margin: 0 !important;
+}
+
+html[hide_element_gift_alerts="true"] div.announcement-line {
+  border-image-slice: 0 !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  margin: 0 !important;
+}
+
+/* Custom */
+
+html[hide_sidebar_avatars="true"] .tw-avatar:not(.channel-root__info .tw-avatar):not([data-test-selector="side-nav-card-collapsed"] .tw-avatar):not(.viewer-card .tw-avatar) {
+  display: none;
+}

@@ -1,0 +1,250 @@
+/* BODY */
+html{
+  background-color: #0e0e10;
+}
+body{
+  margin: auto;
+  width: 680px;
+  color: #adadb8;
+  background-color: #1f1f23;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.4% 2% 1.4% 2%;
+  background-color: #18181b;
+  color: #6c6c6c;
+  border-bottom: 1px solid rgba(19,19,2,0.80);
+  -webkit-box-shadow: 0px 24px 26px -20px rgba(130, 97, 204, 0.5);
+  -moz-box-shadow: 0px 24px 26px -20px rgba(130, 97, 204, 0.5);
+  box-shadow: 0px 24px 26px -20px rgba(130, 97, 204, 0.5);
+  background: rgb(24,24,27);
+  background: linear-gradient(90deg, rgba(24,24,27,1) 0%, rgba(27,21,28,1) 100%);
+}
+.left{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color:#bf94ff;
+  
+}
+.right{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.mid{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 3% 2% 3%;
+  font-size: 13px;
+}
+
+/* TOP */
+p{
+  margin: 0px 6px;
+  padding: 0px;
+}
+a{
+  margin: 0px 6px;
+  padding: 0px;
+  color: #efeff1;
+}
+#turn{
+  color: #efeff1;
+}
+#logo{
+  width: 26px;
+  height: 16px;
+  background-image: url(imgs/twitchHideElements_logo.svg);
+
+}
+
+/* MID */
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.sections{
+  color: #dedee3;
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.bot_sections{
+  margin-top: 2px;
+}
+
+/* TURN OFF/ON */
+html[ext_off="true"] .top{
+  -webkit-box-shadow: 0px 24px 26px -20px rgba(123, 123, 123, 0.5);
+  -moz-box-shadow: 0px 24px 26px -20px rgba(123, 123, 123, 0.5);
+  box-shadow: 0px 24px 26px -20px rgba(123, 123, 123, 0.5);
+}
+html[ext_off="true"] .check:checked ~ .element::before{
+  background-color: #4d4c4e;
+  border-color: #adadb8;
+}
+html[ext_off="true"] .left{
+  color: #adadb8;
+}
+html[ext_off="true"] #logo{
+  background-image: url(imgs/twitchHideElements_logoOff.svg);
+}
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: .1s;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #a970ff;
+}
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #a970ff;
+  transition: 100ms;
+  border-radius: 50px;
+}
+input:checked + .slider{
+  background-color: #00000000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: hsl(0deg 0% 100% / 70%);
+}
+input:checked + .slider:before{
+  transform: translateX(-12px);
+  background-color: hsl(0deg 0% 100%);
+}
+.switch{
+  margin-left: 7px;
+  position: relative;
+  display: flex;
+  width: 32px;
+  height: 18px;
+}
+input:checked:hover + .slider{
+  border-color: #fff;
+}
+
+/* MID CHECKBOXES */
+input[type="checkbox"]{
+  display: none;
+}
+.element{
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+}
+.element::before{
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 1px solid #adadb8;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+.element:hover::before{
+  border-color: #f7f7f8;
+}
+.check:checked + .element::before{
+  background-color: #a970ff;
+  border-color:#663399;
+}
+
+/* TOOLTIPS */
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #ffffff;
+  color: #040109;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px 9px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.70); 
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.70);
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .2s;
+  transition-delay: .5s;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+
+/* RIGHT ALIGN AND ARROW */
+#tooltiptext_right{
+  top: -8px;
+  left: 105%;
+  white-space: nowrap;
+}
+#tooltiptext_right::after{
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+/* TOP ALIGN AND ARROW */
+#tooltiptext_top{
+  bottom: 125%;
+  left: 50%;
+  margin-left: -160px;
+  min-width: 300px;
+}
+#tooltiptext_top::after{
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* LEFT ALIGN AND ARROW */
+#tooltiptext_left{
+  top: -8px;
+  right: 110%;
+  white-space: nowrap;
+}
+#tooltiptext_left::after{
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
